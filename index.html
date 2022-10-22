@@ -5,26 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/swiper-bundle.min.css"
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/logo-horizontal.svg" alt="logo: Best tour-plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search" method="get" >
+        <form action="#" class="search navbar__search navbar__search--mobile_hidden" method="get" >
           <input placeholder="Search Location" type="text" class="search__input" >
           <button class="search__input__button">
             <img src="img/search.svg" alt="icon: search"/>
           </button>
         </form>
-        <a href class="user navbar__user">
+        <a href class="user navbar__user navbar__user--mobile_hidden"">
           <img src="img/avatar.jpg" alt="avatar: Nathan" class="user__avatar"/>
           <span class="user__name">Nathan</span>
         </a>
@@ -40,6 +40,20 @@
     <div class="navbar-bottom">
       <div class="container">
         <ul class="navbar__menu">
+          <li class="navbar__menu__item navbar__menu__item--mobile_visible">
+            <a href="#" class="user navbar__user navbar__user--mobile_visible">
+              <img src="img/avatar.jpg" alt="avatar: Nathan" class="user__avatar"/>
+              <span class="user__name user__name--light">Nathan</span>
+            </a>
+          </li>
+          <li class="navbar__menu__item navbar__menu__item--mobile_visible">
+            <form action="#" class="search navbar__search navbar__search--mobile_visible" method="get" >
+              <input placeholder="Search Location" type="text" class="search__input" >
+              <button class="search__input__button">
+                <img src="img/search.svg" alt="icon: search"/>
+              </button>
+            </form>
+          </li>
           <li class="navbar__menu__item"><a href="#" class="navbar__menu__link">All Deals</a></li>
           <li class="navbar__menu__item"><a href="#" class="navbar__menu__link">Hotels</a></li>
           <li class="navbar__menu__item"><a href="#" class="navbar__menu__link">Activities</a></li>
@@ -325,7 +339,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__contacts-form">
+        <div class="footer__contact-form">
           <h3 class="footer__title">Send us a message</h3>
           <form action="#" class="footer__form">
             <input type="text" class="input footer__input" placeholder="Your Full Name*">

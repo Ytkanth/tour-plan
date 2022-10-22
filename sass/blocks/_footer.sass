@@ -8,15 +8,17 @@
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
     grid-auto-rows: minmax(89px, min-content)
     align-items: start
+    grid-gap: 20px
   &__logo
     width: 166px
     grid-row: 1 / 3
-    align-self: center
+    align-self: stretch
   &__categories
     grid-row: 1 / 4
   &__social
     &-network
       display: flex
+      align-content: start
       grid-row: 2 / 4
       grid-column: span 2
       text-transform: uppercase
@@ -28,7 +30,7 @@
       justify-content: space-between
   &__contact-details
     grid-column: span 2
-  &__contacts-form
+  &__contact-form
     grid-column: span 2
   &__form
     display: flex
@@ -96,6 +98,10 @@
     border-radius: 4px
     margin-top: 23px
     margin-right: 282px
+  .button__send
+    display: flex
+    align-items: center
+    justify-content: space-around
   &__info
     font-style: normal
     font-weight: 700
